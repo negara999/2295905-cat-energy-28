@@ -1,0 +1,11 @@
+.menu {
+  background-color: red;
+
+  &__nav {
+    display: flex;
+  }
+}
+
+.menu__name {
+  text-transform: uppercase;
+}

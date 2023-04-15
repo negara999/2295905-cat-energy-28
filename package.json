@@ -2,24 +2,36 @@
   "name": "cat-energy-28",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
-  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint .",
-    "lint": "npm run editorconfig",
-    "build": "echo 'Build task'",
-    "start": "echo 'Start task'"
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "lint": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
   },
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.3.7",
+    "browser-sync": "^2.29.1",
+    "gulp": "4.0.2",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-less": "5.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "postcss": "8.3.9",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.10"
+  }
 }

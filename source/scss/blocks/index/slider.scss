@@ -1,0 +1,35 @@
+.slider {
+  background-image: url("../img/index-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-page__slider-information {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-page__slider-advice {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.slider__button {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: #68b738;
+  color: #fff;
+}
+
+.main-page__slider-content-wrapper {
+  background: rgba(104, 183, 56, 0.85);
+}
