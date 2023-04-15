@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Sergiu Negara](https://up.htmlacademy.ru/adaptive/28/user/2295905).
-* Наставник: `Неизвестно`.
+- Студент: [Sergiu Negara](https://up.htmlacademy.ru/adaptive/28/user/2295905).
+- Наставник: `Михаил Кислый`.
 
 ---
 
