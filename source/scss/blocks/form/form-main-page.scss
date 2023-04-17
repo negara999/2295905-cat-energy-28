@@ -1,5 +1,5 @@
 .form-main-page__program-select {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -7,7 +7,7 @@
 }
 
 .form-main-page__fill-the-blanks {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -15,8 +15,30 @@
   text-transform: uppercase;
 }
 
-label {
-  font-family: "Oswald";
+.form-main-page__cat-properties {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-right: 13px;
+}
+
+.form-main-page__owner-properties {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-right: 13px;
+}
+
+.form-main-page__product-properties {
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -27,7 +49,7 @@ label {
 }
 
 input[type="text"] {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -38,7 +60,7 @@ input[type="text"] {
 }
 
 input[type="number"] {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -57,7 +79,7 @@ input[type="radio"] {
 }
 
 input [type="tel"] {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -67,7 +89,7 @@ input [type="tel"] {
 }
 
 .form-main-page__client-contact {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -75,15 +97,15 @@ input [type="tel"] {
 }
 
 .form-main-page__section-comments {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 }
 
-textarea {
-  font-family: "Oswald";
+.form-main-page__section-comment {
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -95,7 +117,7 @@ textarea {
 }
 
 .form-main-page__additional {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -103,7 +125,7 @@ textarea {
 }
 
 .form-main-page__complete-obligatory {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

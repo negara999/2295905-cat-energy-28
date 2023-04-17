@@ -46,21 +46,27 @@
             Заполните анкету, и мы подберем<br />программу питания для вашего
             кота
           </h4>
-          <label for="first-name">ИМЯ:*</label>
+          <label for="first-name" class="form-main-page__cat-properties"
+            >ИМЯ:*</label
+          >
           <input
             type="text"
             id="first-name"
             name="first-name"
             placeholder="барсик"
           /><br /><br />
-          <label for="weight">Вес (кг):*</label>
+          <label for="weight" class="form-main-page__cat-properties"
+            >Вес (кг):*</label
+          >
           <input
             type="number"
             id="weight"
             name="weight"
             placeholder="7"
           /><br /><br />
-          <label for="age">Возраст (лет):</label>
+          <label for="age" class="form-main-page__cat-properties"
+            >Возраст (лет):</label
+          >
           <input
             type="number"
             id="age"
@@ -77,21 +83,27 @@
             name="weight-loss"
             value="Похудение"
           />
-          <label for="weight-loss">Похудение</label><br />
+          <label for="weight-loss" class="form-main-page__cat-properties"
+            >Похудение</label
+          ><br />
           <input
             type="radio"
             id="weight-add"
             name="weight-add"
             value="Набор массы"
           />
-          <label for="weight-add">Набор массы</label><br />
+          <label for="weight-add" class="form-main-page__cat-properties"
+            >Набор массы</label
+          ><br />
           <input
             type="radio"
             id="own-response"
             name="own-response"
             value="Не знаю (Нужен ваш совет)"
           />
-          <label for="own-response">Не знаю (Нужен ваш совет)</label>
+          <label for="own-response" class="form-main-page__cat-properties"
+            >Не знаю (Нужен ваш совет)</label
+          >
         </form>
       </div>
       <div class="form-main-page__client-contacts">
@@ -99,7 +111,9 @@
           <h3 class="form-main-page__client-contact">
             Контактные данные<br />(владельца кота)
           </h3>
-          <label for="contact-email">E-mail:*</label>
+          <label for="contact-email" class="form-main-page__owner-properties"
+            >E-mail:*</label
+          >
           <input
             type="text"
             id="contact-email"
@@ -111,7 +125,9 @@
             alt="email-img."
             class="form-main-page__input-image"
           /><br /><br />
-          <label for="contact-phone">Телефон:*</label>
+          <label for="contact-phone" class="form-main-page__owner-properties"
+            >Телефон:*</label
+          >
           <input
             type="tel"
             id="contact-phone"
@@ -133,6 +149,7 @@
           cols="32"
           rows="10"
           placeholder="Расскажите обо всех повaдках кота"
+          class="form-main-page__section-comment"
         ></textarea>
       </div>
       <div class="form-main-page__additional-info">
@@ -143,18 +160,26 @@
           name="option1"
           value="сахарозаменитель"
         />
-        <label for="option1"> сахарозаменитель</label><br />
+        <label for="option1" class="form-main-page__product-properties">
+          сахарозаменитель</label
+        ><br />
         <input
           type="checkbox"
           id="option2"
           name="option2"
           value="питьевая вода"
         />
-        <label for="option2"> питьевая водa</label><br />
+        <label for="option2" class="form-main-page__product-properties">
+          питьевая водa</label
+        ><br />
         <input type="checkbox" id="option3" name="option3" value="молоко" />
-        <label for="option3"> молоко</label><br />
+        <label for="option3" class="form-main-page__product-properties">
+          молоко</label
+        ><br />
         <input type="checkbox" id="option4" name="option4" value="витамины" />
-        <label for="option4"> витамины</label><br />
+        <label for="option4" class="form-main-page__product-properties">
+          витамины</label
+        ><br />
         <button type="submit" class="catalog-product__order-button">
           отправить заявку
         </button>
