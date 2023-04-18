@@ -1,0 +1,131 @@
+.catalog-product__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog-product__items {
+  list-style: none;
+}
+
+.catalog-product__item {
+  margin-bottom: 50px;
+}
+
+.catalog-product__wrapper {
+  display: flex;
+}
+
+.catalog-product__name {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-product__properties {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-product__properties-align {
+  display: flex;
+  gap: 20px;
+}
+
+.catalog-product__order-button {
+  color: #fff;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #68b738;
+}
+
+.catalog-product__plus-button {
+  width: 30px;
+  height: 30px;
+  left: 145px;
+  top: 1658px;
+  align-self: center;
+}
+
+.catalog-product__show-more-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-product__show-more-info {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.catalog-product__show-all-button {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  align-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.catalog-product__additional-items-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog-product__additional-items {
+  list-style: none;
+}
+
+.catalog-product__additional-item-properties {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  gap: 140px;
+}
+
+.catalog-product__item-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.catalog-product__gift-info {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
