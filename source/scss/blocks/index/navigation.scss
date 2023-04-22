@@ -1,5 +1,13 @@
 .navigation__list {
   list-style: none;
+  text-decoration: none;
+  @media (max-width: 768px) {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    visibility: hidden;
+  }
 }
 
 .navigation__item {
@@ -9,4 +17,11 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: 320px) {
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

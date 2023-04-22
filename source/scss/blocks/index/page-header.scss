@@ -1,3 +1,22 @@
-.page-header__wrapper {
-  display: flex;
+@media (min-width: 320px) {
+  .page-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }

@@ -1,3 +1,4 @@
+@use "./variables.scss";
 @use "./blocks/index/menu.scss";
 @use "./blocks/index/slider.scss";
 @use "./blocks/index/product.scss";
@@ -11,3 +12,4 @@
 @use "./blocks/form/form-main-page.scss";
 @use "./blocks/index/slider-button-changer.scss";
 @use "./blocks/index/main-page.scss";
+@use "./blocks/visually-hidden.scss";

@@ -3,6 +3,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  color: #000;
 }
 
 .main-page__slider-advice {
@@ -11,6 +12,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .slider__button {
@@ -21,9 +24,43 @@
   line-height: 18px;
   text-transform: uppercase;
   background: #68b738;
-  color: #fff;
 }
 
 .main-page__slider-content-wrapper {
   background: rgba(104, 183, 56, 0.85);
+}
+
+@media (min-width: 320px) {
+  .main-page__slider-information {
+    text-align: center;
+    padding-top: 27px;
+    color: #fff;
+  }
+
+  .main-page__slider-advice {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-page__slider-content-wrapper {
+    background: none;
+  }
+
+  .main-page__slider-information {
+    text-align: left;
+    color: #000;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 118px;
+    margin-top: 116px;
+  }
+
+  .main-page__slider-advice {
+    color: #000;
+    margin-left: 120px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

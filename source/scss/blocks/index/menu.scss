@@ -1,3 +1,12 @@
-.menu__name {
-  text-transform: uppercase;
+.menu__site-logo {
+  margin-top: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  height: 100%;
+  max-height: 264px;
+  text-decoration: none;
 }

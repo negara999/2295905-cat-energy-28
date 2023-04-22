@@ -17,8 +17,27 @@
 .product__instruction-information {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .product__instruction-image {
   margin-bottom: 20px;
+}
+
+@media (min-width: 320px) {
+  .product__instruction-information {
+  }
+}
+
+@media (min-width: 768px) {
+  .product__instruction-information {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .product__instruction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
