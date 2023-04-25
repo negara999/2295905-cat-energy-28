@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Cat Energy</title>
   </head>
@@ -16,24 +16,32 @@
             alt="logo-icon."
             class="menu__logo-image"
           />
-          <h1 class="menu__name"><b>Cat </b>Energy</h1>
         </a>
+        <a href="/" class="menu__site-logo-link">
+          <img
+            src="img/site-logo.svg"
+            alt="site-name-logo"
+            class="menu__site-logo"
+          />
+        </a>
+        <button class="navigation__button" type="button">
+          <span class="">Открыть меню</span>
+        </button>
       </div>
       <nav class="navigation">
-        <button class="navigation__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list visually-hidden">
+          <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a href="index.html" class="index-page-link">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="navigation__item">
               <a href="catalog.html" class="catalog-page-link"
                 >Каталог продукции</a
               >
             </li>
-            <li class="navigation__item"><a>Подбор программы</a></li>
+            <li class="navigation__item">
+              <a href="form.html" class="form-page-link">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -213,8 +221,12 @@
     </main>
 
     <footer class="page-footer">
-      <a href="#" class="link">
-        <h1 class="page-footer__title"><b>Cat </b>Energy</h1>
+      <a href="/" class="menu__site-logo-link">
+        <img
+          src="img/site-logo.svg"
+          alt="site-name-logo"
+          class="menu__site-logo"
+        />
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">

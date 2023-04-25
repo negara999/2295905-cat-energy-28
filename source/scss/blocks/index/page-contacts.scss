@@ -9,12 +9,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
-@media (min-width: 320px) {
-  .page-contacts__main-map {
-    height: 100%;
-    min-height: 362px;
-  }
+.page-contacts__main-map {
+  height: 100%;
+  min-height: 362px;
 }

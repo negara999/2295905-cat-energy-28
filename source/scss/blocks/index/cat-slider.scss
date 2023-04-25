@@ -40,7 +40,6 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  align-self: center;
 }
 
 .cat-slider__main-info {
@@ -48,4 +47,16 @@
   grid-template-columns: 1fr 1fr;
   list-style: none;
   gap: 30px;
+}
+
+.page-slider-button {
+  border: none;
+  background: none;
+}
+
+@media (min-width: 1280px) {
+  .cat-slider__infomation {
+    width: 100%;
+    max-width: 436px;
+  }
 }

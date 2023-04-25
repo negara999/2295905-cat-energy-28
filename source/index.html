@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -53,14 +54,16 @@
           <h4 class="main-page__slider-advice">
             Занялся собой? Займись котом!
           </h4>
+          <button type="submit" class="slider__button">
+            Подобрать программу
+          </button>
+        </div>
+        <div class="main-page__slider-image-wrapper">
           <img
             src="img/main-page-slider-img.png"
             alt="slider-image."
             class="slider__image"
           />
-          <button type="submit" class="slider__button">
-            Подобрать программу
-          </button>
         </div>
       </div>
       <div class="catalog">
@@ -165,46 +168,53 @@
         </section>
       </div>
       <section class="main-page__cat-slider cat-slider">
-        <h1 class="cat-slider__title">Живой пример</h1>
-        <p class="cat-slider__infomation">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="cat-slider__main-info">
-          <li class="cat-slider__product-benefits">
-            5 КГ
-            <span class="cat-slider__product-benefits-info">снижение веса</span>
-          </li>
-          <li class="cat-slider__product-benefits">
-            60 ДНЕЙ
-            <span class="cat-slider__product-benefits-info"
-              >затрачено времени</span
-            >
-          </li>
-        </ul>
-        <h3 class="cat-slider__product-costing">
-          Затраты на питание: 15 000 РУБ.
-        </h3>
-        <button type="button" class="page-slider-buttom pagination-button">
+        <div class="main-page__cat-slider-info">
+          <h1 class="cat-slider__title">Живой пример</h1>
+          <p class="cat-slider__infomation">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
+          </p>
+          <ul class="cat-slider__main-info">
+            <li class="cat-slider__product-benefits">
+              5 КГ
+              <span class="cat-slider__product-benefits-info"
+                >снижение веса</span
+              >
+            </li>
+            <li class="cat-slider__product-benefits">
+              60 ДНЕЙ
+              <span class="cat-slider__product-benefits-info"
+                >затрачено времени</span
+              >
+            </li>
+          </ul>
+          <h3 class="cat-slider__product-costing">
+            Затраты на питание: 15 000 РУБ.
+          </h3>
+        </div>
+        <div class="main-page__cat-slider-images">
           <img
-            src="img/slide-buttons.svg"
-            alt="arrow-button."
-            width="40"
-            height="40"
-            class="slider-button-changer"
+            src="img/slider1-image.png"
+            alt="cat-image."
+            class="slider1-cat-image"
           />
-        </button>
-        <img
-          src="img/slider1-image.png"
-          alt="cat-image."
-          class="slider1-cat-image"
-        />
-        <img
-          src="img/slider2-image.png"
-          alt="cat-image."
-          class="slider2-cat-image"
-        />
+          <button type="button" class="page-slider-button pagination-button">
+            <img
+              src="img/slide-buttons.svg"
+              alt="arrow-button."
+              width="40"
+              height="40"
+              class="slider-button-changer"
+            />
+          </button>
+          <img
+            src="img/slider2-image.png"
+            alt="cat-image."
+            class="slider2-cat-image"
+          />
+        </div>
       </section>
       <section class="page-contacts">
         <div class="page-contacts__main">

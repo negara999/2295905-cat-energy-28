@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 60px;
 }
 
 .catalog-product__items {
@@ -54,8 +55,6 @@
 .catalog-product__plus-button {
   width: 30px;
   height: 30px;
-  left: 145px;
-  top: 1658px;
   align-self: center;
 }
 
@@ -65,7 +64,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -75,7 +73,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
 }
 
 .catalog-product__show-all-button {
@@ -110,7 +107,7 @@
   font-size: 14px;
   line-height: 14px;
   display: flex;
-  gap: 140px;
+  justify-content: space-between;
 }
 
 .catalog-product__item-title {
@@ -128,4 +125,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .catalog-product__products {
+    display: grid;
+  }
 }

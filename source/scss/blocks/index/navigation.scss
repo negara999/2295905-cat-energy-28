@@ -1,13 +1,8 @@
 .navigation__list {
   list-style: none;
   text-decoration: none;
-  @media (max-width: 768px) {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 36px;
-    visibility: hidden;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation__item {
@@ -19,9 +14,20 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .navigation__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 36px;
+  }
+  .navigation__item--current {
+    border-bottom: 1px solid #68b738;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navigation__list {
+    display: flex;
+    align-items: flex-end;
   }
 }
