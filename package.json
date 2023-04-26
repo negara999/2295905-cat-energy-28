@@ -4,7 +4,7 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
@@ -22,7 +22,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/scss/**/*.scss"
   ],
   "engines": {
     "node": "^16"
