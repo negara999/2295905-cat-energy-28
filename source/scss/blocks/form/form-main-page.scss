@@ -1,7 +1,7 @@
 .form-main-page__program-select {
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-weight: 400;
+
   font-size: 36px;
   line-height: 36px;
 }
@@ -9,7 +9,7 @@
 .form-main-page__fill-the-blanks {
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-weight: 400;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -17,9 +17,6 @@
 
 .form-main-page__cat-properties {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -28,9 +25,6 @@
 
 .form-main-page__owner-properties {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -39,9 +33,6 @@
 
 .form-main-page__product-properties {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -50,9 +41,6 @@
 
 input[type="text"] {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
@@ -61,18 +49,12 @@ input[type="text"] {
 
 input[type="number"] {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 input[type="radio"] {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: "Oswald", sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
@@ -80,9 +62,6 @@ input[type="radio"] {
 
 input [type="tel"] {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -106,9 +85,6 @@ input [type="tel"] {
 
 .form-main-page__section-comment {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;

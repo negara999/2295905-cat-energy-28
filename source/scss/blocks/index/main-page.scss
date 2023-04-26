@@ -3,7 +3,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000;
+  text-align: center;
+  padding-top: 27px;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-page__slider-advice {
@@ -12,14 +21,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #000;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 
   @media (min-width: 768px) {
-    color: #000;
-    margin-left: 120px;
+    color: #000000;
     font-size: 20px;
     line-height: 20px;
   }
@@ -28,65 +35,76 @@
 .slider__button {
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background: #68b738;
 }
 
+.main-page__slider {
+  position: relative;
+  min-height: 302px;
+}
+
+.slider__image {
+  position: absolute;
+  z-index: 10;
+  bottom: -100px;
+}
+
 .main-page__slider-content-wrapper {
-  background: rgba(104, 183, 56, 0.85);
+  position: relative;
+  z-index: 10;
 
   @media (min-width: 768px) {
     background: none;
+    position: static;
   }
-}
 
-.main-page__slider-information {
-  text-align: center;
-  padding-top: 27px;
-  color: #fff;
-
-  @media (min-width: 768px) {
-    text-align: left;
-    color: #000;
-    font-size: 60px;
-    line-height: 60px;
-    margin-left: 118px;
-    margin-top: 116px;
+  @media (min-width: 1280px) {
+    width: 50%;
   }
 }
 
 @media (min-width: 1280px) {
   .main-page__slider {
     display: flex;
-    position: relative;
-  }
-
-  .main-page__slider-content-wrapper {
+    min-height: 694px;
   }
 
   .main-page__cat-slider {
     display: flex;
     width: 100%;
   }
+}
 
-  .main-page__slider-image-wrapper {
-    position: relative;
-    background: rgba(104, 183, 56, 0.85);
+.main-page__slider-image-wrapper {
+  background: rgba(104, 183, 56, 0.85);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &::after {
+    content: "";
+    background-image: url("../img/index-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+    display: block;
+    height: 100%;
     width: 100%;
+  }
 
-    &::after {
-      content: "";
-      background-image: url(../img/index-background.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      opacity: 0.3;
-      display: block;
-      height: 100%;
-      width: 100%;
-    }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    position: relative;
+    width: 50%;
   }
 }
