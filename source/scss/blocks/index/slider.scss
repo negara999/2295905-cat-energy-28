@@ -1,18 +1,15 @@
 .slider__image {
+  z-index: 10;
+
   @media (min-width: 768px) {
     background-image: none;
   }
 
   @media (min-width: 1280px) {
     max-height: 609px;
-    left: -65px;
-    top: 110px;
+    left: 45%;
+    top: 30%;
     position: absolute;
     z-index: 10;
   }
-}
-
-.slider__button {
-  align-items: center;
-  padding: 14px 26px;
 }

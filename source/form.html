@@ -8,7 +8,7 @@
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header navigation--opened navigation--nojs">
       <div class="page-header__wrapper menu">
         <a href="/" class="menu__logo-link">
           <img
@@ -24,15 +24,24 @@
             class="menu__site-logo"
           />
         </a>
-        <button class="navigation__button" type="button">
-          <span class="">Открыть меню</span>
-        </button>
       </div>
-      <nav class="navigation">
+      <button class="navigation__button" type="button">
+        <img
+          src="./img/close-nav.svg"
+          alt="close-navigation"
+          class="navigation__close"
+        />
+        <img
+          src="./img/open-nav.svg"
+          alt="open-navigation"
+          class="navigation__open"
+        />
+      </button>
+      <nav class="navigation navigation--opened navigation--nojs">
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a>Главная</a>
+              <a href="index.html" class="index-page-link">Главная</a>
             </li>
             <li class="navigation__item">
               <a href="catalog.html" class="catalog-page-link"
@@ -88,8 +97,8 @@
           <input
             type="radio"
             id="weight-loss"
-            name="weight-loss"
-            value="Похудение"
+            name="weight-prop"
+            value="weight-loss"
           />
           <label for="weight-loss" class="form-main-page__cat-properties"
             >Похудение</label
@@ -97,8 +106,8 @@
           <input
             type="radio"
             id="weight-add"
-            name="weight-add"
-            value="Набор массы"
+            name="weight-prop"
+            value="weight-add"
           />
           <label for="weight-add" class="form-main-page__cat-properties"
             >Набор массы</label
@@ -106,8 +115,8 @@
           <input
             type="radio"
             id="own-response"
-            name="own-response"
-            value="Не знаю (Нужен ваш совет)"
+            name="weight-prop"
+            value="own-response"
           />
           <label for="own-response" class="form-main-page__cat-properties"
             >Не знаю (Нужен ваш совет)</label
@@ -127,11 +136,12 @@
             id="contact-email"
             name="contact-email"
             placeholder="kuklachev@gmail.com"
+            class="clients-email"
           />
           <img
             src="img/email-stroke.svg"
             alt="email-img."
-            class="form-main-page__input-image"
+            class="form-main-page__input-image email-logo"
           /><br /><br />
           <label for="contact-phone" class="form-main-page__owner-properties"
             >Телефон:*</label
@@ -188,10 +198,14 @@
         <label for="option4" class="form-main-page__product-properties">
           витамины</label
         ><br />
-        <button type="submit" class="catalog-product__order-button">
-          отправить заявку
-        </button>
-        <p class="form-main-page__complete-obligatory">* — Обязательные поля</p>
+        <div class="obligatory-button">
+          <button type="submit" class="catalog-product__order-button">
+            отправить заявку
+          </button>
+          <p class="form-main-page__complete-obligatory">
+            * — Обязательные поля
+          </p>
+        </div>
       </div>
       <section class="page-contacts">
         <div class="page-contacts__main">
@@ -205,27 +219,25 @@
             Санкт-Петербург
           </p>
         </div>
-        <div class="page-contacts__map-info">
-          <img
-            src="img/main-map.png"
-            alt="map."
-            class="page-contacts__main-map"
-          />
-          <img
-            src="img/map-pin.png"
-            alt="map-pin"
-            class="page-contacts__main-map-pin"
-          />
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.654763580893!2d30.326573077403715!3d59.93787066216186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2sMikhailovsky%20Theatre!5e0!3m2!1sen!2s!4v1684531109739!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a href="/" class="menu__site-logo-link">
+      <a href="/" class="page-footer__site-logo-link">
         <img
           src="img/site-logo.svg"
           alt="site-name-logo"
-          class="menu__site-logo"
+          class="page-footer__menu-site-logo"
         />
       </a>
       <ul class="page-footer__social-list">
@@ -257,7 +269,7 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="link">
+      <a href="#" class="page-footer__link">
         <div class="page-footer__academy-info">
           <h4 class="page-footer__academy-name">HTML Academy</h4>
           <img

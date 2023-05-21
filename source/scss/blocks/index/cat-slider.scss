@@ -6,12 +6,17 @@
   line-height: 40px;
 }
 
-.cat-slider__infomation {
+.cat-slider__information {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+
   line-height: 18px;
+
+  @media (min-width: 1280px) {
+    width: 100%;
+    max-width: 436px;
+  }
 }
 
 .cat-slider__product-benefits {
@@ -36,7 +41,7 @@
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
@@ -52,11 +57,7 @@
 .page-slider-button {
   border: none;
   background: none;
-}
-
-@media (min-width: 1280px) {
-  .cat-slider__infomation {
-    width: 100%;
-    max-width: 436px;
-  }
+  position: absolute;
+  top: 0;
+  right: 46%;
 }
