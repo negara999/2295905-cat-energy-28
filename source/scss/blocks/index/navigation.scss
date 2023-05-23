@@ -106,11 +106,6 @@
     border-top: none;
     border-bottom: none;
   }
-
-  @media (min-width: 1280px) {
-    border-top: none;
-    border-bottom: none;
-  }
 }
 
 .navigation__wrapper {
@@ -118,6 +113,10 @@
   z-index: 20;
   width: 100%;
   top: 56px;
+
+  @media (min-width: 768px) {
+    position: static;
+  }
 }
 
 .navigation--closed .navigation__item--current a {

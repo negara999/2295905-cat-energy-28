@@ -5,6 +5,7 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import favicons from "gulp-favicons";
+import svgSprite from "gulp-svg-sprite";
 // Styles
 
 export const styles = () => {
@@ -40,6 +41,21 @@ export const setFavicons = () => {
     .pipe(gulp.dest("./source/img/favicons"));
 };
 
+// SVGSprite
+export const makeSvgSprite = () => {
+  return gulp
+    .src("source/img/*.svg")
+    .pipe(
+      svgSprite({
+        dest: "./source/img",
+      })
+    )
+    .on("error", function (error) {
+      console.log(error);
+    })
+    .pipe(gulp.dest("./source/img"));
+};
+
 // Server
 
 const server = (done) => {
@@ -63,4 +79,4 @@ const watcher = () => {
 
 // Build
 
-export default gulp.series(styles, setFavicons, server, watcher);
+export default gulp.series(styles, setFavicons, makeSvgSprite, server, watcher);

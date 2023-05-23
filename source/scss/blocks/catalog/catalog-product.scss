@@ -3,7 +3,7 @@
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
-  margin-top: 70px;
+
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 40px;
 
@@ -259,4 +259,13 @@
 
 .catalog-product__more-products {
   position: relative;
+}
+
+.catalog-product__icon-gift {
+  background-color: #444444;
+}
+
+.catalog-product__image-wrapper::before {
+  background-color: rgba(104, 183, 56, 0.85);
+  opacity: 0.3;
 }
