@@ -40,5 +40,8 @@
     "postcss": "8.3.9",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
+  },
+  "dependencies": {
+    "gulp-favicons": "^4.0.0"
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/favicons/favicon.ico" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page-body">
@@ -63,11 +64,26 @@
           <h4 class="main-page__slider-advice">
             Занялся собой? Займись котом!
           </h4>
-          <img
-            src="img/main-page-slider-img.png"
-            alt="slider-image."
-            class="slider__image"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                img/index-can-desktop.png,
+                img/index-can-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x"
+            />
+            <img
+              src="img/main-page-slider-img.png"
+              alt="slider-image."
+              class="slider__image"
+              srcset="img/index-can-mobile@2x.png 2x"
+            />
+          </picture>
+
           <button type="submit" class="slider__button">
             Подобрать программу
           </button>
@@ -80,7 +96,7 @@
             <li class="catalog__product">
               <!-- <div class="catalog__select-info"> -->
               <img
-                src="img/catalog-slim-img.png"
+                src="img/catalog-slim-img.svg"
                 width="50px"
                 ;
                 height="50px"
@@ -104,7 +120,7 @@
             <li class="catalog__product">
               <!-- <div class="catalog__select-info"> -->
               <img
-                src="img/catalog-pro-img.png"
+                src="img/catalog-pro-img.svg"
                 width="67px"
                 ;
                 height="50px"
@@ -134,7 +150,7 @@
           <section class="product__instruction">
             <div class="product__instruction-information">
               <img
-                src="img/icon-leaf.png"
+                src="img/icon-leaf.svg"
                 width="61"
                 height="60"
                 alt="healthy-food."
@@ -147,7 +163,7 @@
             </div>
             <div class="product__instruction-information">
               <img
-                src="img/icon-chemistry.png"
+                src="img/icon-chemistry.svg"
                 width="61"
                 height="60"
                 alt="food-caracteristics."
@@ -160,7 +176,7 @@
             </div>
             <div class="product__instruction-information">
               <img
-                src="img/icon-eat.png"
+                src="img/icon-eat.svg"
                 width="61"
                 height="60"
                 alt="food-change."
@@ -173,7 +189,7 @@
             </div>
             <div class="product__instruction-information">
               <img
-                src="img/icon-watch.png"
+                src="img/icon-watch.svg"
                 width="61"
                 height="60"
                 alt="after-food-changes."
@@ -217,11 +233,29 @@
             </h3>
           </div>
           <div class="main-page__cat-slider-images">
-            <img
-              src="img/slider1-image.png"
-              alt="cat-image."
-              class="slider1-cat-image"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  img/slider-before-desktop.png,
+                  img/slider-before-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/slider-before-tablet.png,
+                  img/slider-before-tablet@2x.png 2x
+                "
+              />
+              <img
+                src="img/slider1-image.png"
+                alt="cat-image."
+                class="slider1-cat-image"
+                srcset="img/slider-before-mobile@2x.png 2x"
+              />
+            </picture>
+
             <button type="button" class="page-slider-button pagination-button">
               <img
                 src="img/slide-buttons.svg"
@@ -231,11 +265,28 @@
                 class="slider-button-changer"
               />
             </button>
-            <img
-              src="img/slider2-image.png"
-              alt="cat-image."
-              class="slider2-cat-image"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  img/slider-after-desktop.png,
+                  img/slider-after-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/slider-after-tablet.png,
+                  img/slider-after-tablet@2x.png 2x
+                "
+              />
+              <img
+                src="img/slider2-image.png"
+                alt="cat-image."
+                class="slider2-cat-image"
+                srcset="img/slider-after-mobile@2x.png 2x"
+              />
+            </picture>
           </div>
         </div>
       </section>

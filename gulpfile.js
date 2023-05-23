@@ -4,6 +4,7 @@ import sass from "gulp-dart-sass";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
+import favicons from "gulp-favicons";
 // Styles
 
 export const styles = () => {
@@ -14,6 +15,29 @@ export const styles = () => {
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("source/css", { sourcemaps: "." }))
     .pipe(browser.stream());
+};
+
+// Favicons
+export const setFavicons = () => {
+  return gulp
+    .src("source/img/favicon.png")
+    .pipe(
+      favicons({
+        appName: "Cat Energy",
+        appShortName: "CE",
+        background: "#020307",
+        path: "favicons/",
+        url: "http://haydenbleasel.com/",
+        display: "standalone",
+        orientation: "portrait",
+        scope: "/",
+        start_url: "/?homescreen=1",
+        version: 1.0,
+        html: "source/index.html",
+        pipeHTML: true,
+      })
+    )
+    .pipe(gulp.dest("./source/img/favicons"));
 };
 
 // Server
@@ -37,4 +61,6 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(styles, server, watcher);
+// Build
+
+export default gulp.series(styles, setFavicons, server, watcher);
