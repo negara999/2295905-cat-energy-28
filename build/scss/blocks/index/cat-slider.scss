@@ -1,0 +1,75 @@
+.cat-slider__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.cat-slider__information {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 18px;
+
+  @media (min-width: 1280px) {
+    width: 100%;
+    max-width: 436px;
+  }
+}
+
+.cat-slider__product-benefits {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid #cdcdcd;
+  height: 100%;
+  max-height: 100px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.cat-slider__product-benefits-info {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  background-color: #eaeaea;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 12%;
+}
+
+.cat-slider__product-costing {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cat-slider__main-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  gap: 30px;
+}
+
+.page-slider-button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 46%;
+}

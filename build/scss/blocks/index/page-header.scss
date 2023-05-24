@@ -1,0 +1,19 @@
+.page-header {
+  gap: 60px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

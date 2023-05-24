@@ -1,0 +1,37 @@
+.page-contacts__main {
+  display: flex;
+  gap: 2px;
+
+  @media (min-width: 768px) {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    gap: 55px;
+  }
+}
+
+.page-contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.page-contacts img {
+  display: block;
+}
+
+.page-contacts__main-map {
+  width: 100%;
+}
+
+.page-contacts iframe {
+  border: none;
+  display: block;
+}
