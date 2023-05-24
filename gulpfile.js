@@ -5,7 +5,6 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import favicons from "gulp-favicons";
-import svgSprite from "gulp-svg-sprite";
 import minify from "gulp-htmlmin";
 import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
