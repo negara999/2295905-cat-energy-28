@@ -13,6 +13,7 @@ import svgo from "gulp-svgo";
 import svgstore from "gulp-svgstore";
 import rename from "gulp-rename";
 import del from "gulp-clean";
+
 // Styles
 
 export const styles = () => {
@@ -142,21 +143,15 @@ export const build = gulp.series(
   clean,
   copyFiles,
   optimizeImages,
-  copyImages,
+
   gulp.parallel(styles, html, scripts, createWebp, setFavicons, sprite)
 );
 
 // Default
 export default gulp.series(
-  styles,
-  html,
-  scripts,
-  optimizeImages,
-  copyImages,
-  setFavicons,
-  sprite,
+  clean,
   copyFiles,
-  createWebp,
-  server,
-  watcher
+  copyImages,
+  gulp.parallel(styles, html, scripts, createWebp, setFavicons, sprite),
+  gulp.series(server, watcher)
 );
