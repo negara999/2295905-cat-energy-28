@@ -9,7 +9,7 @@
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body>
-    <header class="page-header navigation--opened navigation--nojs">
+    <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__wrapper menu">
         <a href="/" class="menu__logo-link">
           <img
@@ -19,22 +19,21 @@
           />
         </a>
         <a href="/" class="menu__site-logo-link">
-          <img
-            src="img/site-logo.svg"
-            alt="site-name-logo"
-            class="menu__site-logo"
-          />
+          <svg class="menu__site-logo" width="101" height="18">
+            <use xlink:href="img/sprite.svg#site-logo"></use>
+          </svg>
         </a>
       </div>
       <button class="navigation__button" type="button">
         <svg class="navigation__close" width="24" height="18">
           <use xlink:href="img/sprite.svg#close-nav"></use>
         </svg>
+
         <svg class="navigation__open" width="20" height="20">
           <use xlink:href="img/sprite.svg#open-nav"></use>
         </svg>
       </button>
-      <nav class="navigation navigation--opened navigation--nojs">
+      <nav class="navigation">
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
@@ -57,36 +56,31 @@
         <h2 class="form-main-page__program-select">Подбор программы</h2>
         <form>
           <h4 class="form-main-page__fill-the-blanks">
-            Заполните анкету, и мы подберем<br />программу питания для вашего
-            кота
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </h4>
-          <label for="first-name" class="form-main-page__cat-properties"
-            >ИМЯ:*</label
-          >
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="барсик"
-          /><br /><br />
-          <label for="weight" class="form-main-page__cat-properties"
-            >Вес (кг):*</label
-          >
-          <input
-            type="number"
-            id="weight"
-            name="weight"
-            placeholder="7"
-          /><br /><br />
-          <label for="age" class="form-main-page__cat-properties"
-            >Возраст (лет):</label
-          >
-          <input
-            type="number"
-            id="age"
-            name="age"
-            placeholder="7"
-          /><br /><br />
+          <div class="form-main-page__wrapper">
+            <label for="first-name" class="form-main-page__cat-properties"
+              >ИМЯ:*</label
+            >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="барсик"
+            />
+          </div>
+          <div class="form-main-page__wrapper">
+            <label for="weight" class="form-main-page__cat-properties"
+              >Вес (кг):*</label
+            >
+            <input type="number" id="weight" name="weight" placeholder="7" />
+          </div>
+          <div class="form-main-page__wrapper">
+            <label for="age" class="form-main-page__cat-properties"
+              >Возраст (лет):</label
+            >
+            <input type="number" id="age" name="age" placeholder="7" />
+          </div>
         </form>
       </div>
       <div class="form-main-page__diet-select">
@@ -206,13 +200,10 @@
       <section class="page-contacts">
         <div class="page-contacts__main">
           <h1 class="page-contacts__title">
-            Приглашаем<br />к сотрудничеству<br />
-            дилеров!
+            Приглашаем к сотрудничеству дилеров!
           </h1>
           <p class="page-contacts__main-address">
-            ул. Большая<br />
-            Конюшенная, д. 19/8<br />
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
         <iframe

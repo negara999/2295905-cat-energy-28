@@ -8,9 +8,10 @@
 .form-main-page__fill-the-blanks {
   font-family: "Oswald", sans-serif;
   font-style: normal;
-
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 315px;
 }
 
 .form-main-page__cat-properties {
@@ -128,4 +129,9 @@ input [type="checkbox"] {
     grid-template-columns: 1fr 1fr;
     gap: 65px;
   }
+}
+
+.form-main-page__wrapper {
+  display: flex;
+  justify-content: space-between;
 }

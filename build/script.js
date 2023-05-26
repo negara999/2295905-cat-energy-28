@@ -1,14 +1,14 @@
 let header = document.querySelector(".page-header");
 let navToggle = document.querySelector(".navigation__button");
 
-header.classList.remove("navigation--nojs");
+header.classList.remove("page-header--nojs");
 
 navToggle.addEventListener("click", function () {
-  if (header.classList.contains("navigation--closed")) {
-    header.classList.remove("navigation--closed");
-    header.classList.add("navigation--opened");
+  if (header.classList.contains("page-header--closed")) {
+    header.classList.remove("page-header--closed");
+    header.classList.add("page-header--opened");
   } else {
-    header.classList.add("navigation--closed");
-    header.classList.remove("navigation--opened");
+    header.classList.add("page-header--closed");
+    header.classList.remove("page-header--opened");
   }
 });

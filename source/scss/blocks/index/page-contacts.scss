@@ -15,12 +15,14 @@
 }
 
 .page-contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 165px;
 }
 
 .page-contacts img {
@@ -34,4 +36,9 @@
 .page-contacts iframe {
   border: none;
   display: block;
+}
+
+.page-contacts__main-address {
+  width: 100%;
+  max-width: 140px;
 }

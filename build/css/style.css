@@ -38,7 +38,7 @@
 }
 
 .product__instruction-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -46,16 +46,16 @@
 }
 
 .product__instruction-image-info {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  top: -5px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .product__instruction-information {
   display: flex;
-  gap: 20px;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -93,7 +93,7 @@
 }
 
 .cat-slider__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -101,7 +101,7 @@
 }
 
 .cat-slider__information {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -114,7 +114,7 @@
 }
 
 .cat-slider__product-benefits {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -131,7 +131,7 @@
 }
 
 .cat-slider__product-benefits-info {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -144,7 +144,7 @@
 }
 
 .cat-slider__product-costing {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -186,12 +186,14 @@
 }
 
 .page-contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 165px;
 }
 
 .page-contacts img {
@@ -205,6 +207,11 @@
 .page-contacts iframe {
   border: none;
   display: block;
+}
+
+.page-contacts__main-address {
+  width: 100%;
+  max-width: 140px;
 }
 
 .page-footer__title {
@@ -283,12 +290,6 @@
   color: #444444;
 }
 
-@media (max-width: 767px) {
-  .navigation--closed .navigation {
-    display: none;
-  }
-}
-
 .navigation__list {
   list-style: none;
   text-decoration: none;
@@ -312,7 +313,7 @@
 }
 
 .navigation__item {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -356,26 +357,6 @@
   display: none;
 }
 
-.navigation--opened .page-header {
-  position: absolute;
-  top: 56px;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
-
-.navigation--opened .navigation__open {
-  display: block;
-}
-
-.navigation--closed .navigation__close {
-  display: block;
-}
-
-.navigation--close .navigation {
-  display: none;
-}
-
 .navigation__list a {
   position: relative;
   display: flex;
@@ -407,24 +388,46 @@
   }
 }
 
-.navigation--closed .navigation__item--current a {
+@media (max-width: 767px) {
+  .page-header--closed .navigation {
+    display: none;
+  }
+}
+
+.page-header--opened .page-header {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.page-header--opened .navigation__open {
+  display: block;
+}
+
+.page-header--closed .navigation__close {
+  display: block;
+}
+
+.page-header--closed .navigation__item--current a {
   text-align: center;
 }
 
-.navigation--opened .navigation__wrapper {
+.page-header--opened .navigation__wrapper {
   background-color: #ffffff;
 }
 
-.navigation--nojs .navigation__wrapper {
+.page-header--nojs .navigation__wrapper {
   position: static;
   min-height: 0;
 }
 
-.navigation--nojs .navigation__item {
+.page-header--nojs .navigation__item {
   display: block;
 }
 
-.navigation--nojs .navigation__item--current a {
+.page-header--nojs .navigation__item--current a {
   padding-right: 21px;
   padding-left: 21px;
   text-align: left;
@@ -716,6 +719,9 @@
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
+  max-width: 165px;
+  text-align: center;
 }
 
 .catalog-product__products {
@@ -785,7 +791,7 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -795,7 +801,7 @@
 }
 
 .catalog__information {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -866,6 +872,8 @@
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 315px;
 }
 
 .form-main-page__cat-properties {
@@ -983,6 +991,11 @@ input [type=checkbox] {
   }
 }
 
+.form-main-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-button-changer {
   height: 100%;
   max-height: 256px;
@@ -990,7 +1003,7 @@ input [type=checkbox] {
 }
 
 .main-page__slider-information {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -1009,7 +1022,7 @@ input [type=checkbox] {
 }
 
 .main-page__slider-advice {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
@@ -1026,7 +1039,7 @@ input [type=checkbox] {
 }
 
 .slider__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
@@ -1156,7 +1169,7 @@ input [type=checkbox] {
   }
 }
 
-.page-body {
+body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
@@ -1170,5 +1183,24 @@ input [type=checkbox] {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/lato/Lato-Regular.woff2) format("woff2"), url(../fonts/lato/Lato-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/oswald/oswaldregular.woff) format("woff"), url(../fonts/oswald/oswaldregular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/oswald/oswaldmedium.woff) format("woff"), url(../fonts/oswald/oswaldmedium.woff2) format("woff2");
 }
 /*# sourceMappingURL=style.css.map */
