@@ -13,6 +13,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 65px;
+    margin-left: 118px;
+    width: 100%;
+    max-width: 414px;
+    margin-bottom: 40px;
   }
 }
 
@@ -30,14 +34,14 @@
     color: #000000;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 118px;
+    margin-bottom: 50px;
   }
 }
 
 .slider__button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-
-  line-height: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   background: #68b738;
   color: #ffffff;
@@ -47,6 +51,28 @@
   margin-right: 20px;
   width: 100%;
   border: none;
+
+  @media (min-width: 768px) {
+    position: relative;
+    z-index: 2;
+    max-width: 245px;
+    margin-left: 118px;
+  }
+}
+
+.main-page__picture {
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 65px;
+    align-self: center;
+  }
+
+  @media (min-width: 1280px) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-page__slider {
@@ -75,13 +101,18 @@
 
   @media (min-width: 768px) {
     background: none;
-    position: static;
+    position: relative;
     padding: 0;
     margin: 0 30px;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media (min-width: 1280px) {
     width: 50%;
+    position: static;
   }
 }
 

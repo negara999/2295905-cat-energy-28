@@ -114,8 +114,8 @@ input [type="checkbox"] {
 }
 
 .form-main-page__input-image {
-  position: absolute;
-  left: 47%;
+  width: 20px;
+  height: 20px;
 }
 
 .email-logo {
@@ -133,5 +133,4 @@ input [type="checkbox"] {
 
 .form-main-page__wrapper {
   display: flex;
-  justify-content: space-between;
 }

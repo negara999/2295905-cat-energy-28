@@ -21,15 +21,6 @@
     background-image: none;
   }
 }
-@media (min-width: 1280px) {
-  .slider__image {
-    max-height: 609px;
-    left: 45%;
-    top: 30%;
-    position: absolute;
-    z-index: 10;
-  }
-}
 
 @media (min-width: 768px) {
   .product {
@@ -53,16 +44,48 @@
   width: 100%;
   padding-left: 20px;
 }
+@media (min-width: 768px) {
+  .product__instruction-image-info {
+    z-index: 10;
+    max-width: 204px;
+    align-self: flex-start;
+    padding: 0;
+  }
+}
+
+.product__instruction-image-info--first {
+  width: 100%;
+  max-width: 204px;
+}
+
+.product__instruction-image-info--second {
+  width: 100%;
+  max-width: 224px;
+}
+
+.product__instruction-image-info--third {
+  width: 100%;
+  max-width: 207px;
+}
+
+.product__instruction-image-info--forth {
+  width: 100%;
+  max-width: 245px;
+}
 
 .product__instruction-information {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .product__instruction-information {
     font-size: 16px;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
   }
 }
 @media (min-width: 1280px) {
@@ -73,7 +96,7 @@
 }
 
 @media (min-width: 768px) {
-  .product__instruction .product__instruction {
+  .product__instruction {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -86,9 +109,32 @@
   }
 }
 
+@media (min-width: 768px) {
+  .product__instruction-image {
+    z-index: 10;
+    align-self: flex-start;
+  }
+}
 @media (min-width: 1280px) {
   .product__instruction-image {
     align-self: flex-start;
+  }
+}
+
+.product__background-number {
+  display: none;
+  font-family: "Oswald", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  .product__background-number {
+    display: block;
+    color: #f2f2f2;
+    font-size: 280px;
+    align-self: flex-end;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    left: 100px;
   }
 }
 
@@ -128,6 +174,7 @@
   align-items: center;
   padding-top: 15px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .cat-slider__product-benefits-info {
@@ -137,9 +184,11 @@
   font-size: 16px;
   line-height: 100%;
   background-color: #eaeaea;
-  padding: 0 20px;
+  padding: 0 15px;
   position: absolute;
-  bottom: 7%;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -779,7 +828,9 @@
   .catalog__product {
     height: 100%;
     max-height: 266px;
+    display: grid;
     grid-template-areas: "title image" "text image" "button image";
+    align-items: center;
   }
 }
 @media (min-width: 1280px) {
@@ -799,6 +850,11 @@
   text-transform: uppercase;
   grid-area: title;
 }
+@media (min-width: 768px) {
+  .catalog__title {
+    margin-left: 53px;
+  }
+}
 
 .catalog__information {
   font-family: "Lato", "Arial", sans-serif;
@@ -816,7 +872,9 @@
   .catalog__information {
     font-size: 16px;
     line-height: 24px;
-    max-width: none;
+    max-width: 340px;
+    margin-left: 53px;
+    border: none;
   }
 }
 @media (min-width: 1280px) {
@@ -842,11 +900,24 @@
   margin-left: 20px;
   margin-bottom: 22px;
 }
+@media (min-width: 768px) {
+  .catalog__button-wrapper {
+    margin-left: 53px;
+  }
+}
 
 .catalog__slim-info {
   margin-left: 22px;
   margin-right: 20px;
   grid-area: image;
+  width: 50px;
+  height: 53px;
+}
+@media (min-width: 768px) {
+  .catalog__slim-info {
+    width: 200px;
+    height: 211px;
+  }
 }
 @media (min-width: 1280px) {
   .catalog__slim-info {
@@ -858,17 +929,26 @@
 .catalog__pro-info {
   margin-left: 13px;
   margin-right: 11px;
+  width: 67px;
+  height: 50px;
+  grid-area: image;
+}
+@media (min-width: 768px) {
+  .catalog__pro-info {
+    width: 268px;
+    height: 200px;
+  }
 }
 
 .form-main-page__program-select {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
 }
 
 .form-main-page__fill-the-blanks {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
@@ -877,7 +957,7 @@
 }
 
 .form-main-page__cat-properties {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -885,7 +965,7 @@
 }
 
 .form-main-page__owner-properties {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -893,7 +973,7 @@
 }
 
 .form-main-page__product-properties {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -901,29 +981,30 @@
 }
 
 input[type=text] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-  max-width: 220px;
-  margin-right: 15px;
+  max-height: 45px;
 }
 
 input[type=number] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  max-height: 45px;
 }
 
 input[type=radio] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   accent-color: #00ff00;
 }
 
 input [type=tel] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -934,7 +1015,7 @@ input [type=checkbox] {
 }
 
 .form-main-page__client-contact {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -942,7 +1023,7 @@ input [type=checkbox] {
 }
 
 .form-main-page__section-comments {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -950,7 +1031,7 @@ input [type=checkbox] {
 }
 
 .form-main-page__section-comment {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
@@ -959,7 +1040,7 @@ input [type=checkbox] {
 }
 
 .form-main-page__additional {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -974,8 +1055,8 @@ input [type=checkbox] {
 }
 
 .form-main-page__input-image {
-  position: absolute;
-  left: 47%;
+  width: 20px;
+  height: 20px;
 }
 
 .email-logo {
@@ -993,7 +1074,6 @@ input [type=checkbox] {
 
 .form-main-page__wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .slider-button-changer {
@@ -1018,6 +1098,10 @@ input [type=checkbox] {
     font-size: 60px;
     line-height: 60px;
     margin-top: 65px;
+    margin-left: 118px;
+    width: 100%;
+    max-width: 414px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1035,13 +1119,14 @@ input [type=checkbox] {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 118px;
+    margin-bottom: 50px;
   }
 }
 
 .slider__button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  line-height: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   background: #68b738;
   color: #ffffff;
@@ -1051,6 +1136,30 @@ input [type=checkbox] {
   margin-right: 20px;
   width: 100%;
   border: none;
+}
+@media (min-width: 768px) {
+  .slider__button {
+    position: relative;
+    z-index: 2;
+    max-width: 245px;
+    margin-left: 118px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-page__picture {
+    position: absolute;
+    bottom: 65px;
+    align-self: center;
+  }
+}
+@media (min-width: 1280px) {
+  .main-page__picture {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-page__slider {
@@ -1082,14 +1191,19 @@ input [type=checkbox] {
 @media (min-width: 768px) {
   .main-page__slider-content-wrapper {
     background: none;
-    position: static;
+    position: relative;
     padding: 0;
     margin: 0 30px;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1280px) {
   .main-page__slider-content-wrapper {
     width: 50%;
+    position: static;
   }
 }
 
@@ -1195,12 +1309,12 @@ img {
   font-family: "Oswald";
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/oswald/oswaldregular.woff) format("woff"), url(../fonts/oswald/oswaldregular.woff2) format("woff2");
+  src: url(../fonts/oswald/oswaldregular.woff2) format("woff2"), url(../fonts/oswald/oswaldregular.woff) format("woff");
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/oswald/oswaldmedium.woff) format("woff"), url(../fonts/oswald/oswaldmedium.woff2) format("woff2");
+  src: url(../fonts/oswald/oswaldmedium.woff2) format("woff2"), url(../fonts/oswald/oswaldmedium.woff) format("woff");
 }
 /*# sourceMappingURL=style.css.map */
