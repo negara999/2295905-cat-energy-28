@@ -1,13 +1,116 @@
+.page-contacts {
+  background-color: #f2f2f2;
+  margin-top: 45px;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
 .page-contacts__main {
   display: flex;
+  gap: 2px;
+
+  @media (min-width: 768px) {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 45px 20px;
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 10;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 565px;
+    display: flex;
+    gap: 25px;
+  }
 }
 
 .page-contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 10px;
+  width: 100%;
+  max-width: 139px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 172px;
+  }
+}
+
+.page-contacts img {
+  display: block;
+}
+
+.page-contacts__main-map {
+  width: 100%;
+
+  position: relative;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
+}
+
+.page-contacts iframe {
+  border: none;
+  display: block;
+}
+
+.page-contacts__main-address {
+  width: 100%;
+  max-width: 140px;
+  line-height: 19px;
+
+  @media (min-width: 768px) {
+    line-height: 22px;
+    margin-top: 12px;
+    margin-right: 34px;
+    font-size: 16px;
+    max-width: 190px;
+    text-align: right;
+  }
+
+  @media (min-width: 1280px) {
+    margin: 0;
+  }
+}
+
+.page-contacts__main-address-town {
+  @media (min-width: 768px) {
+    display: inline-block;
+    margin-top: 17px;
+  }
+}
+
+.page-contacts__main-map-pin {
+  position: absolute;
+  right: 32%;
+  transform: translate(-50%, -50%);
+  top: 47%;
+
+  @media (min-width: 768px) {
+    width: 113px;
+    height: 106px;
+    position: absolute;
+    right: 35%;
+    top: 49%;
+  }
+}
+
+.page-contacts__map-wrapper {
+  position: relative;
 }

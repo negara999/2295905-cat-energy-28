@@ -1,5 +1,7 @@
-.slider {
-  background-image: url("../img/index-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.slider__image {
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    background-image: none;
+  }
 }
