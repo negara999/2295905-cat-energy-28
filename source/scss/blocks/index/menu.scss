@@ -11,4 +11,55 @@
   text-decoration: none;
   align-items: center;
   margin-left: 20px;
+
+  @media (min-width: 768px) {
+    margin-left: 31px;
+    padding-bottom: 14px;
+    gap: 0;
+  }
+}
+
+.menu__site-logo-link {
+  margin-left: 12px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu__logo-image {
+  width: 33px;
+  height: 37px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__logo-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu__logo-desktop {
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: inline-block;
+  }
+}
+
+.menu__site-logo-link--form {
+  margin-left: 1px;
 }

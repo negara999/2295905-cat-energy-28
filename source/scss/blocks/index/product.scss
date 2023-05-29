@@ -10,6 +10,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin-top: -3px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 75px;
+  }
 }
 
 .product__instruction-image-info {
@@ -19,6 +25,7 @@
   line-height: 18px;
   width: 100%;
   padding-left: 20px;
+  line-height: 24px;
 
   @media (min-width: 768px) {
     z-index: 10;
@@ -28,30 +35,38 @@
   }
 }
 
+.product__instruction-image {
+  margin-top: 7px;
+}
+
 .product__instruction-image-info--first {
-  width: 100%;
-  max-width: 204px;
+  @media (min-width: 768px) {
+    max-width: 204px;
+  }
 }
 
 .product__instruction-image-info--second {
-  width: 100%;
-  max-width: 224px;
+  @media (min-width: 768px) {
+    max-width: 224px;
+  }
 }
 
 .product__instruction-image-info--third {
-  width: 100%;
-  max-width: 207px;
+  @media (min-width: 768px) {
+    max-width: 207px;
+  }
 }
 
 .product__instruction-image-info--forth {
-  width: 100%;
-  max-width: 245px;
+  @media (min-width: 768px) {
+    max-width: 245px;
+  }
 }
 
 .product__instruction-information {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+
   position: relative;
 
   @media (min-width: 768px) {
@@ -85,6 +100,9 @@
   @media (min-width: 768px) {
     z-index: 10;
     align-self: flex-start;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: 1280px) {
@@ -102,8 +120,26 @@
     font-size: 280px;
     align-self: flex-end;
     position: absolute;
-    top: 90px;
-    right: 50px;
-    left: 100px;
+    top: 94px;
+    left: 120px;
+  }
+}
+
+.product__instruction-information--chemistry {
+  @media (min-width: 768px) {
+    margin-left: 31px;
+  }
+}
+
+.product__instruction-information--eat {
+  @media (min-width: 768px) {
+    margin-top: 36px;
+  }
+}
+
+.product__instruction-information--watch {
+  @media (min-width: 768px) {
+    margin-top: 35px;
+    margin-left: 31px;
   }
 }

@@ -1,8 +1,12 @@
 .form-main-page__program-select {
   font-family: "Oswald", Arial, sans-serif;
   font-style: normal;
-  font-size: 36px;
   line-height: 36px;
+  font-size: 32px;
+  margin-top: 37px;
+
+  @media (min-width: 768px) {
+  }
 }
 
 .form-main-page__fill-the-blanks {
@@ -11,7 +15,11 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-  max-width: 315px;
+  max-width: 275px;
+  margin-top: 36px;
+  font-size: 13px;
+  margin-left: -5px;
+  margin-bottom: 38px;
 }
 
 .form-main-page__cat-properties {
@@ -42,24 +50,24 @@ input[type="text"] {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
-  width: 100%;
-  max-height: 45px;
+  flex: 1;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 input[type="number"] {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
-  width: 100%;
-  max-height: 45px;
+  flex: 1;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 input[type="radio"] {
-  font-family: "Oswald", Arial, sans-serif;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  accent-color: #00ff00;
+  appearance: none;
 }
 
 input [type="tel"] {
@@ -117,11 +125,22 @@ input [type="checkbox"] {
 .form-main-page__input-image {
   width: 20px;
   height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .email-logo {
-  margin-left: 20px;
-  padding-top: 2px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.clients-email,
+.clients-phone {
+  width: 100%;
+  padding: 10px 15px;
 }
 
 .obligatory-button {
@@ -133,5 +152,61 @@ input [type="checkbox"] {
 }
 
 .form-main-page__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.form-main-page__diet-select-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-main-page__cat-properties--radio {
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 26px;
+}
+
+.control-mark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.form-main-page__fill-the-blanks-wrapper {
+  margin-bottom: 43px;
+}
+
+.form-main-page__owner-information {
+  position: relative;
+  flex: 1;
+}
+
+.form-main-page__client {
   display: flex;
 }

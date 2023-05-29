@@ -43,22 +43,30 @@
   text-align: left;
 }
 
-.page-header {
+.page-header__container {
   gap: 60px;
   text-decoration: none;
-  margin-bottom: 15px;
+  padding: 10px 0;
   position: relative;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: sticky;
     background-color: #ffffff;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.page-header--form {
+  margin-top: 10px;
+}
+
+.page-header__wrapper {
+  @media (min-width: 1280px) {
+    margin-top: 47px;
   }
 }

@@ -4,14 +4,27 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    margin-top: 39px;
+  }
 }
 
 .cat-slider__information {
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-
   line-height: 18px;
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-top: 73px;
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
 
   @media (min-width: 1280px) {
     width: 100%;
@@ -33,33 +46,61 @@
   flex-direction: column;
   align-items: center;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-top: 8px;
+  }
 }
 
 .cat-slider__product-benefits-info {
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 100%;
   background-color: #eaeaea;
   padding: 0 15px;
   position: absolute;
-  bottom: -20px;
-  left: 50%;
+  bottom: -15px;
+  left: 60px;
   transform: translateX(-50%);
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-bottom: 13px;
+  }
 }
 
 .cat-slider__product-costing {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  font-size: 14px;
   font-weight: 400;
-
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 33px;
+  margin-left: 46px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 175px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 23px;
+    text-align: end;
+  }
+}
+
+.cat-slider__product-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cat-slider__main-info {
@@ -67,6 +108,19 @@
   grid-template-columns: 1fr 1fr;
   list-style: none;
   gap: 30px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-width: 436px;
+  }
 }
 
 .page-slider-button {
@@ -75,4 +129,23 @@
   position: absolute;
   top: 0;
   right: 46%;
+
+  @media (min-width: 768px) {
+    top: 0%;
+    right: 53%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.slider-changer-button {
+  position: absolute;
+  left: 19%;
+  transform: translateX(-50%);
+}
+
+.main-page__cat-slider-wrapper {
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

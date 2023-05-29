@@ -4,19 +4,24 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  padding-top: 27px;
   color: #ffffff;
+  margin-bottom: 5px;
 
   @media (min-width: 768px) {
     text-align: left;
     color: #000000;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
-    margin-left: 118px;
+    margin-top: 115px;
+    margin-left: 88px;
     width: 100%;
     max-width: 414px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 79px;
+    margin-left: 161px;
   }
 }
 
@@ -24,53 +29,66 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 28px;
 
   @media (min-width: 768px) {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 118px;
-    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-top: 3px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 160px;
+    margin-top: 1px;
   }
 }
 
 .slider__button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   background: #68b738;
   color: #ffffff;
   align-items: center;
-  padding: 14px 26px;
   margin-left: 20px;
   margin-right: 20px;
   width: 100%;
   border: none;
+  padding: 8px 44px 8px 44px;
 
   @media (min-width: 768px) {
     position: relative;
     z-index: 2;
+    font-size: 20px;
     max-width: 245px;
-    margin-left: 118px;
+    margin-left: 91px;
+    padding: 10px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 160px;
+    margin-top: 25px;
   }
 }
 
 .main-page__picture {
   @media (min-width: 768px) {
     position: absolute;
-    bottom: 65px;
+    bottom: 71px;
     align-self: center;
   }
 
   @media (min-width: 1280px) {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: 28%;
+    left: 58%;
     transform: translateX(-50%);
   }
 }
@@ -78,11 +96,11 @@
 .main-page__slider {
   position: relative;
   max-height: 302px;
-  margin-bottom: 285px;
+  margin-bottom: 204px;
   overflow: visible;
 
   @media (min-width: 768px) {
-    margin-bottom: 735px;
+    margin-bottom: 622px;
   }
 
   @media (min-width: 1280px) {
@@ -118,6 +136,7 @@
 
 .main-page__cat-slider {
   background-color: #eaeaea;
+  padding-top: 30px;
 
   @media (min-width: 1280px) {
     display: flex;
@@ -151,16 +170,26 @@
   }
 
   @media (min-width: 1280px) {
-    position: relative;
+    margin-top: -142px;
+    z-index: 20;
     width: 50%;
+    z-index: 20;
+    background: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    bottom: 143px;
+    left: 720px;
   }
 }
 
 .main-page__cat-slider-images {
   position: relative;
+  margin-top: 19px;
 
   @media (min-width: 768px) {
     margin: 0 30px;
+    margin-top: 92px;
+    margin-left: 105px;
+    padding-bottom: 100px;
   }
 }
 

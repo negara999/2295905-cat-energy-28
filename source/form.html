@@ -9,16 +9,28 @@
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body>
-    <header class="page-header page-header--closed page-header--nojs">
+    <header
+      class="page-header page-header--closed page-header--nojs page-header--form"
+    >
       <div class="page-header__wrapper menu">
         <a href="/" class="menu__logo-link">
+          <img
+            src="img/logo-desktop.png"
+            alt="site-logo."
+            class="menu__logo-desktop"
+          />
+          <img
+            src="img/logo-tablet.png"
+            alt="site-logo"
+            class="menu__logo-tablet"
+          />
           <img
             src="img/logo-mobile.png"
             alt="logo-icon."
             class="menu__logo-image"
           />
         </a>
-        <a href="/" class="menu__site-logo-link">
+        <a href="/" class="menu__site-logo-link menu__site-logo-link--form">
           <svg class="menu__site-logo" width="101" height="18">
             <use xlink:href="img/sprite.svg#site-logo"></use>
           </svg>
@@ -37,7 +49,7 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a href="index.html" class="index-page-link">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="navigation__item">
               <a href="catalog.html" class="catalog-page-link"
@@ -51,11 +63,12 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <main class="form-main-page">
+
+    <main class="form-main-page">
+      <div class="container">
         <div class="form-main-page__cat-characteristics">
           <h2 class="form-main-page__program-select">Подбор программы</h2>
-          <form>
+          <form class="form-main-page__fill-the-blanks-wrapper">
             <h4 class="form-main-page__fill-the-blanks">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </h4>
@@ -85,34 +98,47 @@
           </form>
         </div>
         <div class="form-main-page__diet-select">
-          <form>
-            <input
-              type="radio"
-              id="weight-loss"
-              name="weight-prop"
-              value="weight-loss"
-            />
-            <label for="weight-loss" class="form-main-page__cat-properties"
-              >Похудение</label
-            ><br />
-            <input
-              type="radio"
-              id="weight-add"
-              name="weight-prop"
-              value="weight-add"
-            />
-            <label for="weight-add" class="form-main-page__cat-properties"
-              >Набор массы</label
-            ><br />
-            <input
-              type="radio"
-              id="own-response"
-              name="weight-prop"
-              value="own-response"
-            />
-            <label for="own-response" class="form-main-page__cat-properties"
-              >Не знаю (Нужен ваш совет)</label
+          <form class="form-main-page__diet-select-form">
+            <label
+              for="weight-loss"
+              class="form-main-page__cat-properties form-main-page__cat-properties--radio"
             >
+              <input
+                type="radio"
+                id="weight-loss"
+                name="weight-prop"
+                value="weight-loss"
+                checked
+              />
+              <span class="control-mark"></span>
+              <span class="control-label"> Похудение</span>
+            </label>
+            <label
+              for="weight-add"
+              class="form-main-page__cat-properties form-main-page__cat-properties--radio"
+            >
+              <input
+                type="radio"
+                id="weight-add"
+                name="weight-prop"
+                value="weight-add"
+              />
+              <span class="control-mark"></span>
+              <span class="control-label"> Набор массы</span>
+            </label>
+            <label
+              for="own-response"
+              class="form-main-page__cat-properties form-main-page__cat-properties--radio"
+            >
+              <input
+                type="radio"
+                id="own-response"
+                name="weight-prop"
+                value="own-response"
+              />
+              <span class="control-mark"></span>
+              <span class="control-label"> Не знаю (Нужен ваш совет)</span>
+            </label>
           </form>
         </div>
         <div class="form-main-page__client-contacts">
@@ -120,34 +146,46 @@
             <h3 class="form-main-page__client-contact">
               Контактные данные<br />(владельца кота)
             </h3>
-            <label for="contact-email" class="form-main-page__owner-properties"
-              >E-mail:*</label
-            >
-            <input
-              type="text"
-              id="contact-email"
-              name="contact-email"
-              placeholder="kuklachev@gmail.com"
-              class="clients-email"
-            />
+            <div class="form-main-page__client">
+              <label
+                for="contact-email"
+                class="form-main-page__owner-properties"
+                >E-mail:*</label
+              >
+              <div class="form-main-page__owner-information">
+                <input
+                  type="text"
+                  id="contact-email"
+                  name="contact-email"
+                  placeholder="kuklachev@gmail.com"
+                  class="clients-email"
+                />
 
-            <svg class="form-main-page__input-image email-logo">
-              <use xlink:href="img/sprite.svg#email-stroke"></use>
-            </svg>
-            <br /><br />
-            <label for="contact-phone" class="form-main-page__owner-properties"
-              >Телефон:*</label
-            >
-            <input
-              type="tel"
-              id="contact-phone"
-              name="contact-phone"
-              placeholder="8 (960) 900-60-90"
-            />
+                <svg class="form-main-page__input-image email-logo">
+                  <use xlink:href="img/sprite.svg#email-stroke"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-main-page__client">
+              <label
+                for="contact-phone"
+                class="form-main-page__owner-properties"
+                >Телефон:*</label
+              >
+              <div class="form-main-page__owner-information">
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="contact-phone"
+                  placeholder="8 (960) 900-60-90"
+                  class="clients-phone"
+                />
 
-            <svg class="form-main-page__input-image">
-              <use xlink:href="img/sprite.svg#phone-stroke"></use>
-            </svg>
+                <svg class="form-main-page__input-image">
+                  <use xlink:href="img/sprite.svg#phone-stroke"></use>
+                </svg>
+              </div>
+            </div>
           </form>
         </div>
         <div class="form-main-page__comments">
@@ -198,30 +236,44 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="page-contacts__map-wrapper">
+          <section class="page-contacts">
+            <div class="container">
+              <div class="page-contacts__main">
+                <h1 class="page-contacts__title">
+                  Приглашаем <br />к сотрудничеству дилеров!
+                </h1>
+                <p class="page-contacts__main-address">
+                  ул. Большая Конюшенная, д. 19/8
+                  <span class="page-contacts__main-address-town"
+                    >Санкт-Петербург</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
 
-        <section class="page-contacts">
-          <div class="page-contacts__main">
-            <h1 class="page-contacts__title">
-              Приглашаем к сотрудничеству дилеров!
-            </h1>
-            <p class="page-contacts__main-address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
-          </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.654763580893!2d30.326573077403715!3d59.93787066216186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2sMikhailovsky%20Theatre!5e0!3m2!1sen!2s!4v1684531109739!5m2!1sen!2s"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </section>
-      </main>
-    </div>
-
+          <section class="page-contacts__main-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.654763580893!2d30.326573077403715!3d59.93787066216186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2sMikhailovsky%20Theatre!5e0!3m2!1sen!2s!4v1684531109739!5m2!1sen!2s"
+              width="100%"
+              height="362"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            <img
+              src="img/map-pin.png"
+              alt="map-pin."
+              class="page-contacts__main-map-pin"
+            />
+          </section>
+        </div>
+    </main>
     <div class="container">
       <footer class="page-footer">
         <a href="/" class="page-footer__site-logo-link">

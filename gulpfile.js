@@ -40,14 +40,14 @@ const scripts = () => {
 };
 
 // Images
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
@@ -64,7 +64,7 @@ const createWebp = () => {
 };
 
 // SVGSprite
-const svg = () => {
+export const svg = () => {
   return gulp.src("source/img/*.svg").pipe(svgo()).pipe(gulp.dest("build/img"));
 };
 
@@ -72,9 +72,7 @@ export const sprite = () => {
   return gulp
     .src("source/img/*.svg")
     .pipe(svgo())
-    .pipe(
-      svgstore({})
-    )
+    .pipe(svgstore({}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 };
